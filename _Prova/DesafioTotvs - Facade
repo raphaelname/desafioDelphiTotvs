@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net" modified="2022-04-24T18:22:45.752Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36" etag="n6MecoM6d2XLXPHklm-1" version="17.4.6" type="github">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="1422" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-0" value="Sistema CRM" style="swimlane;startSize=23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="160" y="40" width="360" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-1" value="Controller.Cliente" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-0">
+          <mxGeometry x="40" y="40" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-2" value="ConsultaPorId(id: Integer): Model.Cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-1">
+          <mxGeometry y="30" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-5" value="Controller.Produto" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-0">
+          <mxGeometry x="40" y="110" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-6" value="ConsultaPorId(id: Integer): Model.Produto" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-5">
+          <mxGeometry y="30" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-7" value="Controller.Venda" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-0">
+          <mxGeometry x="40" y="180" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-8" value="ConsultaPorClienteId(id: Integer): Model.Venda" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-7">
+          <mxGeometry y="30" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-9" value="Sistema Facade" style="swimlane;startSize=23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="880" y="40" width="600" height="223" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-10" value="ERP.CRM.Facade" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-9">
+          <mxGeometry x="40" y="40" width="520" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-19" value="" style="group;strokeColor=default;" vertex="1" connectable="0" parent="L_GZAeDKsnQMUdZzG56E-10">
+          <mxGeometry y="30" width="520" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-14" value="ControllerCliente := TControllerCliente.Create() //Controller.Cliente" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-19">
+          <mxGeometry width="480" height="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-18" value="ControllerProduto := TControllerProduto.Create() //Controller.Produto" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-19">
+          <mxGeometry y="30.000000000000004" width="480" height="22.5" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-17" value="ControllerVenda:= TControllerVenda.Create() //Controller.Venda" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-19">
+          <mxGeometry y="54" width="480" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-11" value="GerarRelatorioVendasPorCliente(idCliente: Integer): TObjectList&lt;Produtos&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-10">
+          <mxGeometry y="120" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-20" value="Sistema ERP" style="swimlane;startSize=23;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="880" y="480" width="600" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-21" value="ERP.GeradorRelatorio" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-20">
+          <mxGeometry x="40" y="40" width="520" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-22" value="" style="group;strokeColor=default;" vertex="1" connectable="0" parent="L_GZAeDKsnQMUdZzG56E-21">
+          <mxGeometry y="30" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-23" value="ERPCRMFacade := TERPCRMFacade.Create() //ERP.CRM.Facade" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-22">
+          <mxGeometry width="480" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-26" value="ERPCRMFacade.GerarRelatorioVendasPorCliente(idCliente: Integer): TObjectList&lt;Produtos&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="L_GZAeDKsnQMUdZzG56E-21">
+          <mxGeometry y="70" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-34" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="910" y="120" as="sourcePoint" />
+            <mxPoint x="500" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-35" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="910" y="156.5" as="sourcePoint" />
+            <mxPoint x="500" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-36" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="910" y="190" as="sourcePoint" />
+            <mxPoint x="500" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L_GZAeDKsnQMUdZzG56E-38" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1190" y="460" as="sourcePoint" />
+            <mxPoint x="1190" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
